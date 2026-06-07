@@ -315,7 +315,83 @@ li{margin:8px 0}
   border-bottom-color:var(--brand);
 }
 .footer-space{margin-top:40px}
+
+.text-link{
+  color:var(--brand);
+  text-decoration:none;
+  border-bottom:1px solid rgba(159,40,59,.35);
+  transition:all .18s ease;
+}
+.text-link:hover{
+  color:var(--brand-dark);
+  border-bottom-color:var(--brand-dark);
+}
+
+
+.site-footer{
+  margin-top:56px;
+  padding:0 24px 30px;
+  color:var(--muted);
+}
+.site-footer-shell{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,#fff 0%, #fbf8f9 100%);
+  box-shadow:0 10px 24px rgba(55,37,41,.04);
+}
+.site-footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) 1px minmax(260px,.85fr);
+  gap:0 22px;
+  align-items:stretch;
+  padding:18px 20px;
+}
+.site-footer-divider{
+  width:1px;
+  background:linear-gradient(180deg, rgba(166,143,148,.18), rgba(166,143,148,.55), rgba(166,143,148,.18));
+}
+.site-footer-block{
+  min-width:0;
+}
+.site-footer-label{
+  margin:0 0 10px;
+  color:var(--brand);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.78rem;
+  font-weight:700;
+  line-height:1.4;
+}
+.site-footer-note{
+  margin:0;
+  font-size:.95rem;
+  line-height:1.72;
+  color:var(--muted);
+}
+.site-footer-author{
+  margin:0;
+  color:var(--ink);
+  font-weight:700;
+  font-size:.98rem;
+  line-height:1.55;
+}
+.site-footer-role{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.55;
+}
+
 @media (max-width:880px){
+  .site-footer{padding:0 16px 24px}
+  .site-footer-grid{
+    grid-template-columns:1fr;
+    gap:14px 0;
+    padding:16px 16px;
+  }
+  .site-footer-divider{
+    width:100%;
+    height:1px;
+  }
   .page{margin:0; border:none; box-shadow:none}
   .cover,.content{padding:28px 22px 42px}
   .topline{flex-direction:column; align-items:flex-start; gap:14px; margin-bottom:28px}
@@ -350,10 +426,10 @@ li{margin:8px 0}
 <div class="cover-grid">
 <div class="cover-copy">
 <h1>Guía de uso de inteligencia artificial (IA) generativa para estudiantes</h1>
-<p class="subtitle subtitle-program">Secretaría Académica</p>
+<p class="subtitle subtitle-program"></p>
 <p class="subtitle subtitle-university">Universidad Nacional de Quilmes (UNQ)</p>
 <div class="cover-year">Edición 2026</div>
-<p class="byline"><strong>Linda Angelica Lopez</strong></p>
+<p class="byline"><strong></strong></p>
 </div>
 <figure aria-hidden="true" class="hero-illustration"><svg focusable="false" role="img" viewbox="0 0 420 520">
 <rect fill="#f7f7f7" height="520" width="420" x="0" y="0"></rect>
@@ -543,7 +619,7 @@ li{margin:8px 0}
 <li>usar IA para simular lectura que no se realizó.</li>
 </ul>
 </div>
-</div><div class="back-index"><a href="#indice">↑ Volver al índice</a></div><h2 class="section" id="sec8">8. ¿Cómo declarar y citar el uso de IA generativa?</h2><p>Cuando la inteligencia artificial generativa tuvo un papel relevante en la elaboración de un trabajo académico, conviene que ese uso quede explicitado. Dar cuenta de esa intervención permite mostrar cómo fue realizado el trabajo, qué mediaciones participaron en su producción y qué lugar tuvo la IA en tareas como la escritura, la organización de ideas, la reformulación o la búsqueda de información. También permite dar cuenta de cómo fue elaborado el trabajo y qué intervención tuvo la IA en ese proceso. La manera de hacerlo puede variar según la materia, la carrera, las indicaciones docentes o el estilo de citación solicitado. En esta guía se toma como referencia las Normas APA, desarrolladas por la American Psychological Association (APA), por ser de las más utilizadas en los trabajos académicos. Eso no implica desconocer que existen otros estilos de citación. En este sentido, APA (2026) ofrece ejemplos específicos para referencias de sistemas de IA generativa y chats de IA, la Modern Language Association of America (MLA, 2025) actualizó su guía para este tipo de materiales y <em>The Chicago Manual of Style</em> (Chicago, 2023) recomienda mencionar su uso directamente en el texto o en nota al pie. Más allá de sus diferencias, APA, MLA y Chicago coinciden en un punto: el uso de IA debe ser reconocido, pero la responsabilidad intelectual y académica sobre el trabajo sigue siendo de la persona que lo presenta.</p><h3>8.1. Declarar no es exactamente lo mismo que citar</h3><p>Declarar el uso de IA generativa implica hacer visible que intervino en alguna parte del proceso de trabajo. Citar, en cambio, supone reconocer esa intervención de acuerdo con un estilo académico determinado, cuando la consigna lo requiera.</p><p>En muchos trabajos de cursada puede alcanzar con una declaración de uso, sobre todo si la IA generativa se utilizó para organizar ideas, reformular preguntas o revisar la claridad de un texto. En otros casos, cuando se recupera, se parafrasea o se toma de manera más directa una respuesta generada por IA generativa, puede ser necesario además citar esa intervención.</p><h3>8.1.1 Modelo breve de declaración de uso</h3><div class="declaration">Para la elaboración de este trabajo recurrí de manera puntual a IA generativa para organizar ideas, revisar la claridad del texto y reformular algunas preguntas de trabajo. Su uso no reemplazó la lectura de la bibliografía ni el trabajo de análisis y escritura realizado.</div><h3>8.1.2 Ejemplo orientativo en normas APA (7.ª edición)</h3><p>APA (2025) ofrece ejemplos específicos para referencias de sistemas de IA y chats de IA. También indica que las fuentes no recuperables por otras personas se tratan como comunicaciones personales, es decir, se citan solo en el texto y no se incorporan en la lista de referencias. También conviene registrar qué sistema o modelo se utilizó y la fecha de generación de la respuesta, por si hiciera falta volver sobre ella más adelante.</p><div class="citation-stack"><div class="citation-card"><span class="citation-label">Cita en el texto</span><p>Si la respuesta de la IA no es recuperable por otras personas, puede citarse en el texto del siguiente modo:</p><pre class="citation-mono">(OpenAI, comunicación personal, 17 de abril de 2026)</pre></div><div class="citation-card"><span class="citation-label">Referencia recuperable</span><p>Si la conversación o respuesta generada puede consultarse mediante un enlace compartible, puede incorporarse además una referencia.</p><pre class="citation-mono">OpenAI. (2026, 17 de abril). Respuesta de ChatGPT a la consulta “…” [Chat con IA generativa]. ChatGPT. URL compartible</pre></div></div><div class="citation-note"><strong>Aclaración:</strong> Los ejemplos presentados aquí son orientativos. La forma de citar la inteligencia artificial generativa puede variar según la norma utilizada, la disponibilidad de un enlace y las indicaciones de cada docente.</div><h3>8.2. Criterio general para esta guía</h3><div class="note"><p>En esta guía se parte de la idea de que:</p><ul><li>cuando la IA generativa tuvo un lugar importante en la elaboración de un trabajo, conviene hacerlo visible;</li><li>si un texto generado íntegramente por IA se presenta como propio, se vuelve menos claro cómo fue elaborado;</li><li>las respuestas de la IA generativa no reemplazan la bibliografía ni otras fuentes consultadas;</li><li>la consigna de cada materia es la que orienta si alcanza con una declaración de uso o si también hace falta una cita formal.</li><li>en esta guía se propone tomar APA como referencia principal, sin desconocer que existen otros estilos de citación posibles.</li></ul><p>Cuando exista duda, corresponde priorizar la transparencia y consultar la pauta docente específica.</p></div><div class="back-index"><a href="#indice">↑ Volver al índice</a></div><h2 class="section" id="sec9">9. Preguntas para decidir antes de usarla</h2><div class="box">
+</div><div class="back-index"><a href="#indice">↑ Volver al índice</a></div><h2 class="section" id="sec8">8. ¿Cómo declarar y citar el uso de IA generativa?</h2><p>Cuando la inteligencia artificial generativa tuvo un papel relevante en la elaboración de un trabajo académico, conviene que ese uso quede explicitado. Dar cuenta de esa intervención permite mostrar cómo fue realizado el trabajo, qué mediaciones participaron en su producción y qué lugar tuvo la IA en tareas como la escritura, la organización de ideas, la reformulación o la búsqueda de información. También permite dar cuenta de cómo fue elaborado el trabajo y qué intervención tuvo la IA en ese proceso. La manera de hacerlo puede variar según la materia, la carrera, las indicaciones docentes o el estilo de citación solicitado. En esta guía se toma como referencia las Normas APA, desarrolladas por la American Psychological Association (APA), por ser de las más utilizadas en los trabajos académicos. Eso no implica desconocer que existen otros estilos de citación. En este sentido, APA (2026) ofrece ejemplos específicos para <a class="text-link" href="https://apastyle.apa.org/style-grammar-guidelines/references/examples/ai-references?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" title="Abre la guía de ejemplos APA sobre referencias de IA">referencias</a> de sistemas de IA generativa y chats de IA, la Modern Language Association of America (<a class="text-link" href="https://style.mla.org/citing-generative-ai-updated-revised/" target="_blank" rel="noopener noreferrer" title="Abre la guía de MLA sobre cómo citar IA generativa">MLA, 2025</a>) actualizó su guía para este tipo de materiales y recomienda no tratarla como autora, sino describir el contenido generado en el título de la fuente, indicar el modelo específico utilizado e incluir un enlace estable y compartible cuando esté disponible y <em>The Chicago Manual of Style</em> (<a class="text-link" href="https://www.chicagomanualofstyle.org/qanda/data/faq/topics/Documentation/faq0422.html" target="_blank" rel="noopener noreferrer" title="Abre la guía de Chicago sobre cómo citar IA generativa">Chicago, 2023</a>) sugiere mencionar ese uso en el texto o, cuando haga falta una cita más formal, recurrir a una nota al pie o nota final. También recomienda incluir la fecha de generación y, si se dispone de un enlace público, incorporarlo para que la referencia pueda verificarse. Más allá de sus diferencias, APA, MLA y Chicago coinciden en un punto: el uso de IA debe ser reconocido, pero la responsabilidad intelectual y académica sobre el trabajo sigue siendo de la persona que lo presenta.</p><h3>8.1. Declarar no es exactamente lo mismo que citar</h3><p>Declarar el uso de IA generativa implica hacer visible que intervino en alguna parte del proceso de trabajo. Citar, en cambio, supone reconocer esa intervención de acuerdo con un estilo académico determinado, cuando la consigna lo requiera.</p><p>En muchos trabajos de cursada puede alcanzar con una declaración de uso, sobre todo si la IA generativa se utilizó para organizar ideas, reformular preguntas o revisar la claridad de un texto. En otros casos, cuando se recupera, se parafrasea o se toma de manera más directa una respuesta generada por IA generativa, puede ser necesario además citar esa intervención.</p><h3>8.1.1 Modelo breve de declaración de uso</h3><div class="declaration">Para la elaboración de este trabajo recurrí de manera puntual a IA generativa para organizar ideas, revisar la claridad del texto y reformular algunas preguntas de trabajo. Su uso no reemplazó la lectura de la bibliografía ni el trabajo de análisis y escritura realizado.</div><h3>8.1.2 Ejemplo orientativo en normas APA (7.ª edición)</h3><p>APA (2025) ofrece ejemplos específicos para referencias de sistemas de IA y chats de IA. También indica que las fuentes no recuperables por otras personas se tratan como <a class="text-link" href="https://apastyle.apa.org/style-grammar-guidelines/citations/personal-communications?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" title="Abre la guía APA sobre comunicaciones personales">comunicaciones personales</a>, es decir, se citan solo en el texto y no se incorporan en la lista de referencias. También conviene registrar qué sistema o modelo se utilizó y la fecha de generación de la respuesta, por si hiciera falta volver sobre ella más adelante.</p><div class="citation-stack"><div class="citation-card"><span class="citation-label">Cita en el texto</span><p>Si la respuesta de la IA no es recuperable por otras personas, puede citarse en el texto del siguiente modo:</p><pre class="citation-mono">(OpenAI, comunicación personal, 17 de abril de 2026)</pre></div><div class="citation-card"><span class="citation-label">Referencia recuperable</span><p>Si la conversación o respuesta generada puede consultarse mediante un enlace compartible, puede incorporarse además una referencia.</p><pre class="citation-mono">OpenAI. (2026, 17 de abril). Respuesta de ChatGPT a la consulta “…” [Chat con IA generativa]. ChatGPT. URL compartible</pre></div></div><div class="citation-note"><strong>Aclaración:</strong> Los ejemplos presentados aquí son orientativos. La forma de citar la inteligencia artificial generativa puede variar según la norma utilizada, la disponibilidad de un enlace y las indicaciones de cada docente.</div><h3>8.2. Criterio general para esta guía</h3><div class="note"><p>En esta guía se parte de la idea de que:</p><ul><li>cuando la IA generativa tuvo un lugar importante en la elaboración de un trabajo, conviene hacerlo visible;</li><li>si un texto generado íntegramente por IA se presenta como propio, se vuelve menos claro cómo fue elaborado;</li><li>las respuestas de la IA generativa no reemplazan la bibliografía ni otras fuentes consultadas;</li><li>la consigna de cada materia es la que orienta si alcanza con una declaración de uso o si también hace falta una cita formal.</li><li>en esta guía se propone tomar APA como referencia principal, sin desconocer que existen otros estilos de citación posibles.</li></ul><p>Cuando exista duda, corresponde priorizar la transparencia y consultar la pauta docente específica.</p></div><div class="back-index"><a href="#indice">↑ Volver al índice</a></div><h2 class="section" id="sec9">9. Preguntas para decidir antes de usarla</h2><div class="box">
 <ul>
 <li>¿Esto me ayuda a pensar mejor o solo me resuelve una tarea?</li>
 <li>¿Podría explicar y sostener con mis palabras el texto final?</li>
@@ -571,6 +647,25 @@ li{margin:8px 0}
 </ol>
 </div><div class="back-index"><a href="#indice">↑ Volver al índice</a></div><div class="back-top"><a href="#top">↑ Volver al inicio</a></div>
 </main>
+
+<footer class="site-footer">
+  <div class="site-footer-shell">
+    <div class="site-footer-grid">
+      <div class="site-footer-block">
+        <p class="site-footer-label">Aval</p>
+        <p class="site-footer-note">La <em>Guía de uso de inteligencia artificial (IA) generativa para estudiantes</em> fue avalada por el Comité de Ética y Uso Responsable de la IA.</p>
+      </div>
+      <div class="site-footer-divider" aria-hidden="true"></div>
+      <div class="site-footer-block">
+        <p class="site-footer-label">Créditos</p>
+        <p class="site-footer-author">Linda Angelica Lopez</p>
+        <p class="site-footer-role">Secretaría Académica</p>
+        <p class="site-footer-role">Última actualización: agosto de 2026</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </div>
 </body>
 </html>
